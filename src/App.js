@@ -45,7 +45,6 @@ function App() {
   return (
     <div className="App">
       <Center>
-        
         <Box maxW="20em">
         <Flex>
           <Box pt="0.3em">
@@ -157,7 +156,7 @@ function App() {
           <h4>
             Inga personuppgifter sparas!
           </h4>
-          <Paper style={{padding:"2em", marginTop:"3em",}}>
+          <Paper style={{padding:"2em", marginTop:"1em",}}>
             <QRCode value={filtered(values.mailPrefix)} />
           </Paper>
         </Box>
