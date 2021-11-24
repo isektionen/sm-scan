@@ -30,6 +30,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+          <FormHelperText id="outlined-weight-helper-text">KTH mail</FormHelperText>
           <OutlinedInput
             id="outlined-adornment-weight"
             value={filtered(values.mailPrefix)}
@@ -40,7 +41,7 @@ function App() {
               'aria-label': 'weight',
             }}
           />
-          <FormHelperText id="outlined-weight-helper-text">KTH mail</FormHelperText>
+          
         </FormControl>
         <QRCode value={filtered(values.mailPrefix)} />
         <p>
