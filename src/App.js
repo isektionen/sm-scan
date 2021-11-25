@@ -12,6 +12,7 @@ import { Box, Heading } from "@chakra-ui/react";
 import { Center, Square, Circle } from "@chakra-ui/react";
 import { Paper } from '@mui/material';
 import { Flex, Spacer } from "@chakra-ui/react";
+import VercelBanner from './components/VercelBanner'
 
 function App() {
   const [values, setValues] = React.useState({
@@ -159,6 +160,11 @@ function App() {
           <Paper style={{padding:"2em", marginTop:"1em",}}>
             <QRCode value={filtered(values.mailPrefix)} />
           </Paper>
+          <Box pt="1em">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.vercel.com/?utm_source=isektionen&utm_campaign=oss">
+              <VercelBanner />
+            </a>
+          </Box>
         </Box>
       </Center>
     </div>
