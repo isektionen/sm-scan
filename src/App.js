@@ -160,7 +160,10 @@ function App() {
           <Paper style={{padding:"2em", marginTop:"1em",}}>
             <QRCode value={filtered(values.mailPrefix)} />
           </Paper>
-          <Box pt="1em">
+          <Box pt="30em">
+            <Center>
+              <Heading as="h2" mt="0" textAlign="left" size="3xl">Sponsor</Heading>
+            </Center>
             <a target="_blank" rel="noopener noreferrer" href="https://www.vercel.com/?utm_source=isektionen&utm_campaign=oss">
               <VercelBanner />
             </a>
