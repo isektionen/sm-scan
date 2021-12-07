@@ -168,9 +168,15 @@ function App() {
           <h4>
             Inga personuppgifter sparas!
           </h4>
-          <Paper style={{padding:"2em", marginTop:"1em",}}>
-            <QRCode value={filter_for_qr_code(values.mailPrefix)} />
+          {/* set elevation to 1 or 2 for a "paper" that contains the qr code*/}
+          <Paper elevation={0} style={{padding:"1em", marginTop:"1em",}}>
+            <Center>
+              <QRCode size="290" value={filter_for_qr_code(values.mailPrefix)} />
+            </Center>
           </Paper>
+          <Center>
+            <p style={{fontSize: "0.8em", color:"#333333", paddingTop:"0.7em",}}>Utvecklad av Oliver Midbrink</p>
+          </Center>
           <Box pt="30em">
             <Center>
               <Heading as="h2" mt="0" textAlign="left" size="3xl">Sponsor</Heading>
