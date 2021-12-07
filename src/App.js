@@ -39,9 +39,20 @@ function App() {
   };
 
   function filtered(input) {
-    return String(input).toLowerCase();
+    var filteredString = String(input).toLowerCase();
+
+    return filteredString;
   }
 
+  function filter_for_qr_code(input) {
+    var filteredString = String(input).toLowerCase();
+
+    if (input.includes("@")) {
+      filteredString = filteredString.split("@")[0];
+    }
+
+    return filteredString;
+  }
 
   return (
     <div className="App">
@@ -158,7 +169,7 @@ function App() {
             Inga personuppgifter sparas!
           </h4>
           <Paper style={{padding:"2em", marginTop:"1em",}}>
-            <QRCode value={filtered(values.mailPrefix)} />
+            <QRCode value={filter_for_qr_code(values.mailPrefix)} />
           </Paper>
           <Box pt="30em">
             <Center>
