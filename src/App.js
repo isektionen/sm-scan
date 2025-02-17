@@ -118,7 +118,9 @@ function App() {
 
   const filtered = (input) => String(input).toLowerCase();
 
-  // Combine email and pincode for QR code value
+  // Combine email prefix and pincode into a string "emailPrefix:pincode"
+  // The email is converted to lower case and only the part before "@" is used,
+  // ensuring you can split the QR code string by ":" in your database.
   const filter_for_qr_code = (mail, pincode) => {
     let filteredMail = String(mail).toLowerCase();
     if (mail.includes("@")) {
