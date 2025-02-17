@@ -18,7 +18,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "prod": "HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start",
     "build": "react-scripts build",
     "test": "react-scripts test",
