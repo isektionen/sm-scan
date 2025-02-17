@@ -95,7 +95,13 @@ const LoginForm = ({ email, setEmail, pincode, setPincode, handleChange, filtere
       <OutlinedInput
         type="password"
         value={pincode}
-        onChange={(e) => setPincode(e.target.value)}
+        onChange={(e) => {
+          const value = e.target.value;
+          // allow only numbers and limit to 3 digits
+          if (/^\d{0,3}$/.test(value)) {
+            setPincode(value);
+          }
+        }}
         placeholder="Välj en 3-siffrig pinkod"
         inputProps={{ maxLength: 3, pattern: "[0-9]{3}" }}
         aria-label="pincode"
