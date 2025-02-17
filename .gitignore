@@ -1,2 +1,5 @@
+# Node
 /node_modules
 
+# Misc
+.Ds_Store
