@@ -170,14 +170,6 @@ function App() {
               Uppdaterad av Sakarias Åman Rosengren
             </p>
           </Center>
-          <Box pt="30em">
-            <Center>
-              <Heading as="h2" textAlign="left" size="3xl">Sponsor</Heading>
-            </Center>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.vercel.com/?utm_source=isektionen&utm_campaign=oss">
-              <VercelBanner />
-            </a>
-          </Box>
         </Box>
       </Center>
     </div>
