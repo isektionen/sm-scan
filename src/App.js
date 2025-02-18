@@ -132,7 +132,7 @@ function App() {
     if (mail.includes("@")) {
       filteredMail = filteredMail.split("@")[0];
     }
-    return `${filteredMail}:${pincode}`;
+    return `${filteredMail};${pincode}`;
   };
 
   return (
