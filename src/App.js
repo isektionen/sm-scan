@@ -167,7 +167,6 @@ function App() {
           <Center mt="1em">
             <p style={{ fontSize: "0.8em", color:"#333333" }}>
               Utvecklad av Oliver Midbrink<br/>
-              Uppdaterad av Sakarias Åman Rosengren
             </p>
           </Center>
         </Box>
